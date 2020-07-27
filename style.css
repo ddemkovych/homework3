@@ -1,17 +1,17 @@
 body{
     background-color: rgb(123, 148, 194);
 
-}
+};
 
 .name{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px coral;
-}
+};
 
 p{
 text-align: center;
 margin-top: 20px;
 font-size: 20px;
 color: #000000;
-}
+};

@@ -45,8 +45,8 @@ function howManyLetters ( letters , word){
  
 //7
 function convertCurrency (valNum){
-  if (valNum.includes('$') || valNum.includes("uah")) {
-    return valNum.includes('$') ? (parseInt(valNum) * 26) + "uah" : (parseInt(valNum) / 26) + "$";
+  if (valNum.replace('$') || valNum.replace("uah")) {
+    return valNum.replace('$') ? (parseInt(valNum) * 26) + "uah" : (parseInt(valNum) / 26) + "$";
     }
 };
 
@@ -70,5 +70,5 @@ document.writeln(`<p>Функція 3: Перша велика буква:${firs
 document.writeln(`<p>Функція 4:Податки:${netProfit(2000)}</p>`);
 document.writeln(`<p>Функція 5:Рондомне число:${getRandNumber(1,10)}</p>`);
 document.writeln(`<p>Функція 6:Кількість букв в слові( "r", "terrorist"):${howManyLetters ( "r", "terrorist") }</p>`);
-document.writeln(`<p>Функція 7: Валюта $ = uah:${convertCurrency ('100$') }</p>`);
+document.writeln(`<p>Функція 7: Валюта $ = uah:${convertCurrency ('100uah') }</p>`);
 document.writeln(`<p>Функція 9: Видалення букв ("r", "terrorist"):${deleteLetters( "r", "terrorist")}</p>`);
